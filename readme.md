@@ -34,6 +34,8 @@ Project is created with:
 
 
 ## Git Setup for Existing Projects
-git remote add origin https://github.com/sushantapatra/mern_projects.git
-git branch -M main
-git push -u origin main
+```
+$ git remote add origin https://github.com/sushantapatra/New-Course.git
+$ git branch -M main
+$ git push -u origin main
+```
