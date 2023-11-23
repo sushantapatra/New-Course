@@ -21,6 +21,7 @@ Project is created with:
 * Vercel(https://vercel.com/)
 * Vite.Js(https://vitejs.dev/guide/)
 * Material UI(https://mui.com/material-ui/react-button/)
+* nodemon (https://nodemon.io/)
 
 ## Table of contents (optional)
 
