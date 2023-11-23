@@ -22,6 +22,7 @@ Project is created with:
 * Vite.Js(https://vitejs.dev/guide/)
 * Material UI(https://mui.com/material-ui/react-button/)
 * nodemon (https://nodemon.io/)
+* $ npm i morgan (https://github.com/expressjs/morgan)
 
 ## Table of contents (optional)
 
