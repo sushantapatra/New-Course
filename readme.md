@@ -32,7 +32,11 @@ Project is created with:
 - FAQ
 - Maintainers
 
-
+## Run Mongo DB in Mac Os
+```
+brew services start mongodb-community@6.0
+brew services stop mongodb-community@6.0
+```
 ## Git Setup for Existing Projects
 ```
 $ git remote add origin https://github.com/sushantapatra/New-Course.git
