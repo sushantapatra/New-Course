@@ -9,10 +9,19 @@ var colors = require("colors");
 //rest obj
 const app = express();
 
+// view template engine
+app.set('view engine', 'pug')
+app.set('views', './views')
+
 //middlewares
 // parse application/json ||  Parse JSON bodies
 app.use(express.json());
 //app.use(bodyParser.json());
+
+//View Route
+app.get('/', (req, res)=>{
+	res.render('home')
+})
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));

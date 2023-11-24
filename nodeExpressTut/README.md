@@ -5,12 +5,14 @@ $ npm i nodemon
 $ npm i body-parser
 $ npm i morgan
 $ npm i colors
+$ npm i pug
 ```
 * Express => Built a server and api 
 * Nodemon => Automatic restarting of application on watchmode.
 * body-parser => JSON Property reader
 * Morgan => HTTP request logger middleware for node.js
 * colors => get color and style in your node.js console (github.com/Marak/colors.js)
+* Pug => HTML Template Engine. A clean, whitespace-sensitive template language for writing HTML
 
 
 ## Express Middlewares
