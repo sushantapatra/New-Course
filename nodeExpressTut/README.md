@@ -6,6 +6,7 @@ $ npm i body-parser
 $ npm i morgan
 $ npm i colors
 $ npm i pug
+$ npm i mongoose
 ```
 * Express => Built a server and api 
 * Nodemon => Automatic restarting of application on watchmode.
@@ -13,6 +14,7 @@ $ npm i pug
 * Morgan => HTTP request logger middleware for node.js
 * colors => get color and style in your node.js console (github.com/Marak/colors.js)
 * Pug => HTML Template Engine. A clean, whitespace-sensitive template language for writing HTML
+* Mongoose => Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment
 
 
 ## Express Middlewares

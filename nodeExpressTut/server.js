@@ -3,7 +3,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 var colors = require("colors");
-
+const connectDB = require("./config/db");
+//database connection file
+// require('./config/db')
+connectDB();
 
 
 //rest obj
