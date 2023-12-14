@@ -1,15 +1,11 @@
 import "./App.css";
+import Customer from "./components/Customer";
 
 function App() {
 	return (
 		<div className="App">
-			<h1 className="text-bg-danger">React Typescript Learn</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-				laudantium deleniti magnam a eos! Quas distinctio illo modi quam
-				iure nulla ratione nobis nesciunt, veritatis necessitatibus
-				illum, enim ea. Ab!
-			</p>
+			<h1 className="text-bg-danger my-4 p-4">React Typescript Learn</h1>
+			<Customer name="Sushanta Patra" age={21} />
 		</div>
 	);
 }
