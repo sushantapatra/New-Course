@@ -1,4 +1,5 @@
 import { Button, Divider, Typography } from "@mui/material";
+
 import React from "react";
 const ButtonComponent = () => {
 	return (
@@ -66,6 +67,35 @@ const ButtonComponent = () => {
 				disableElevation
 				sx={{ margin: "20px" }}>
 				Disable elevation
+			</Button>
+
+			<Divider sx={{ margin: "20px" }} />
+			<Typography variant="h4" sx={{ marginTop: "20px" }}>
+				Button Colors
+			</Typography>
+			<Button color="secondary" sx={{ margin: "20px" }}>
+				Secondary
+			</Button>
+			<Button variant="contained" color="success" sx={{ margin: "20px" }}>
+				Success
+			</Button>
+			<Button variant="outlined" color="error" sx={{ margin: "20px" }}>
+				Error
+			</Button>
+
+			<Divider sx={{ margin: "20px" }} />
+			<Typography variant="h4" sx={{ marginTop: "20px" }}>
+				Button Sizes
+			</Typography>
+
+			<Button size="small" sx={{ margin: "10px" }}>
+				Small
+			</Button>
+			<Button size="medium" sx={{ margin: "10px" }}>
+				Medium
+			</Button>
+			<Button size="large" sx={{ margin: "10px" }}>
+				Large
 			</Button>
 		</>
 	);

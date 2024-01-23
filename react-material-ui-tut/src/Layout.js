@@ -16,7 +16,7 @@ const Layout = () => {
 			<Container maxWidth="xl">
 				<Box sx={{ height: "100vh", margin: "20px" }}>
 					<Grid container spacing={2}>
-						<Grid item xs={3}>
+						<Grid item xs={3} sm="auto" grid-xs-12>
 							<Paper sx={{ width: 320 }}>
 								<MenuList dense>
 									<MenuItem>
@@ -62,7 +62,7 @@ const Layout = () => {
 								</MenuList>
 							</Paper>
 						</Grid>
-						<Grid item xs={9}>
+						<Grid item xs={9} sm="auto" grid-xs-12>
 							<Paper>
 								<Box
 									sx={{
