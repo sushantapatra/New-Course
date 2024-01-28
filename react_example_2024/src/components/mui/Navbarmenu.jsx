@@ -1,8 +1,8 @@
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { AppBar, Avatar, Badge, Box, InputBase, Toolbar, Typography, styled } from '@mui/material';
-import React from 'react';
+import { AppBar, Avatar, Badge, Box, InputBase, Menu, MenuItem, Toolbar, Typography, styled } from '@mui/material';
+import React, { useState } from 'react';
 const StyledToolbar = styled(Toolbar)({
   display:'flex',
   justifyContent:'space-between'
@@ -30,6 +30,7 @@ const UserBox = styled(Box)(({theme}) =>({
 	}
 }))
 const Navbarmenu = () => {
+	const [open, setOpen] = useState(false)
 	return (
 		<AppBar position='sticky'>
 			<StyledToolbar>
@@ -43,13 +44,31 @@ const Navbarmenu = () => {
 					<Badge badgeContent={2} color="error">
 						<NotificationsIcon color="action" />
 					</Badge>
-					<Avatar sx={{width:30, height:30}} alt="Remy Sharp"  src="https://mui.com/static/images/avatar/3-sm.jpeg" />
+					<Avatar sx={{width:30, height:30}} alt="Remy Sharp"  src="https://mui.com/static/images/avatar/3-sm.jpeg" onClick={(e)=>setOpen(true)}/>
 				</Icons>
-				<UserBox>
-					<Avatar sx={{width:30, height:30}} alt="Remy Sharp"  src="https://mui.com/static/images/avatar/3-sm.jpeg" />
+				<UserBox onClick={(e)	=>setOpen(true)}>
+					<Avatar sx={{width:30, height:30}} alt="Remy Sharp"  src="https://mui.com/static/images/avatar/3-sm.jpeg"  />
 					<Typography variant='span'>Jon Doe</Typography>
 				</UserBox>
 			</StyledToolbar>
+			<Menu
+				id="demo-positioned-menu"
+				aria-labelledby="demo-positioned-button"
+				open={open}
+				onClose={(e)=>setOpen(false)}
+				anchorOrigin={{
+				vertical: 'top',
+				horizontal: 'right',
+				}}
+				transformOrigin={{
+				vertical: 'top',
+				horizontal: 'right',
+				}}
+			>
+			<MenuItem >Profile</MenuItem>
+			<MenuItem >My account</MenuItem>
+			<MenuItem >Logout</MenuItem>
+		</Menu>
 			
 		</AppBar>
 	)
