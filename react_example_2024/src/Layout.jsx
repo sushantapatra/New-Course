@@ -6,7 +6,7 @@ import Navbarmenu from './components/mui/Navbarmenu';
 const Layout = () => {
     return (
         <>
-            <Box style={{backgroundColor:'red'}}>
+            <Box>
                 {/* Navbar */}
                 <Navbarmenu/>
                 <Stack direction={"row"} spacing={2} justifyContent={'space-evenly'}>
